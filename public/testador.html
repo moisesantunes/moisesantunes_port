@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>testador</title>
+    <link href="http://allfont.net/allfont.css?fonts=lucida-console" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="despositivos.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- <div class="topnav" id="myTopnav">
+        <a href="/" class="home" >home</a>
+        <a href="/inicio.html">Inicio</a>
+        <a href="/testador.html" class="active">Testador</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="fnav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> -->
+    <!-- <a href="/" class="home" >home</a>
+    <a href="javascript:device('tablet')">tablet</a>
+    <a href="javascript:device('smartphone')">celular</a>
+    <a href="javascript:device('laptop')">note-book</a> -->
+    <div id="nav-ico" class="icon-bar">
+            <a id="home" href="/"><i class="fas fa-home"></i></a> 
+            <a  href="/inicio.html"><i class="fas fa-backspace"></i></a> 
+            <a id="smartphone" class="icone" href="javascript:device('smartphone')"><i class="fas fa-mobile-alt"></i></a>
+            <a id="tablet" href="javascript:device('tablet')"><i class="fas fa-tablet-alt"></i></a>  
+            <a id="laptop" href="javascript:device('laptop')"><i class="fas fa-laptop"></i></a>
+            <a id="expand" href="javascript:device('expand')"><i class="fas fa-expand"></i></a> 
+          </div>
+
+
+    <div class="container-smartphone" id="container">
+        <div class="smartphone" id="device">
+            <div class="content-smartphone" id="content_device">    
+                <iframe class="frame-smartphone" id="frame_device" src="exemplo.html"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="container">
+        <div class="tablet">
+            <div class="content-tablet">
+                <iframe  class="frame-tablet" src="exemplo.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="laptop">
+            <div class="content-laptop">
+                <iframe  class="frame-laptop" src="exemplo.html"></iframe>
+            </div>
+        </div>
+    </div> -->
+    
+</body>
+</html>

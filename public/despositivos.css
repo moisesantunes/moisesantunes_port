@@ -1,0 +1,220 @@
+/*celular */
+
+/* The device with borders */
+.smartphone {
+  transform: scale(1);
+  transform-origin: 50% 0%;
+  margin: auto;
+  width: 360px;
+  height: 640px;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+    
+  }
+ 
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content-smartphone {
+    width: 100%;
+    height: 100%;
+  }
+  .frame-smartphone{
+    width:100%;
+    border:none;
+    height:100%;
+  }
+  .container-smartphone{
+    width: 100vw;
+    margin: 10px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /*tablet ///////////////////////*/
+  /* The device with borders */
+  .tablet {
+    transform: scale(.7);
+    width: 768px;
+    height: 1024px;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    transform-origin: 50% 0%;
+    margin: auto;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .tablet:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .tablet:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .tablet .content-tablet {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame-tablet{
+    width:100%;
+    border:none;
+    height:100%;
+  }
+  .container-tablet{
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    height: 730px;
+  }
+
+  /*note-book */
+
+  
+/* The laptop with borders */
+.laptop {
+  -webkit-transform: scale(.7) ; /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.725) ; /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+  transform-origin: 50% 0%;
+  margin: auto;
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -145px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content-laptop {
+  width: 100%;
+  height: 100%;
+}
+
+.frame-laptop{
+  width:100%;
+  border:none;
+  height:100%;
+}
+
+.container-laptop{
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  height: 630px;
+}
+
+.expand {
+  width: 100%;
+  height: 100vh;
+  border:2px solid chartreuse;
+}
+.content-expand{
+  width: 100%;
+  height: 100%;
+  border: .1px solid salmon;
+}
+.frame-expand{
+  width:100%;
+  border:none;
+  height:100%;
+}
+@media only screen and (max-width: 640px) {
+ 
+  .smartphone{
+    transform: scale(.96);
+    transform-origin: 50% 0%;
+    margin: auto;
+  }
+  .tablet{
+    transform: scale(.6);
+    transform-origin:10% 0%;
+    margin: auto;
+  }
+  .laptop{
+    transform: scale(.4);
+    transform-origin:6% 0%;
+    margin: auto;
+  }
+}
