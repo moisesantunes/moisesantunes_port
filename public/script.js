@@ -19,7 +19,7 @@ function fnav() {
     mudaIcone(tipo)
   }
   function mudaIcone(tipo){
-    var tipo1 = document.getElementById(tipo)
+    
     var icones = document.getElementById('nav-ico').children;
    // icone.className= 'icone';
     var i;
@@ -35,3 +35,11 @@ function fnav() {
     }
    
   }
+
+  function alternadora(){
+    var que=  location.search.slice(1);
+    var k= que.substring(0, que.indexOf("="));
+    var v= que.substring(que.indexOf("=")+1)
+    window.frames[0].location=v+"/"
+    }
+    

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "local-web-server": "^2.6.1"
+    "local-web-server": "^2.6.1",
+    "nunjucks": "^3.2.0"
   }
 }
