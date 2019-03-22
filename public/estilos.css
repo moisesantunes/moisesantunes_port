@@ -130,6 +130,16 @@ a.icone{
   color: #5299e0;
 }
 
+.img-container{
+  width: 40%;
+  border: .1px solid crimson;
+}
+.imagem1{
+  width: 100%;
+}
+
+
+
   @media screen and (max-width: 500px) {
     .topnav{
       width: 95vw;

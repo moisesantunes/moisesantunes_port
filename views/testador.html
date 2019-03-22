@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="despositivos.css">
     <script src="script.js"></script>
 </head>
-<body onload="alternadora()"></body>
+<body >
    
     <div id="nav-ico" class="icon-bar">
             <a id="home" href="/"><i class="fas fa-home"></i></a> 
-            <a  href="/inicio.html"><i class="fas fa-backspace"></i></a> 
+            <a  href="/projetos"><i class="fas fa-backspace"></i></a> 
             <a id="smartphone" class="icone" href="javascript:device('smartphone')"><i class="fas fa-mobile-alt"></i></a>
             <a id="tablet" href="javascript:device('tablet')"><i class="fas fa-tablet-alt"></i></a>  
             <a id="laptop" href="javascript:device('laptop')"><i class="fas fa-laptop"></i></a>
@@ -27,10 +27,11 @@
     <div class="container-smartphone" id="container">
         <div class="smartphone" id="device">
             <div class="content-smartphone" id="content_device">    
-                <iframe class="frame-smartphone" id="frame_device" src="exemplo.html"></iframe>
+                <iframe class="frame-smartphone" id="frame_device" src="/templates/{{conteudo}}/"></iframe>
             </div>
         </div>
     </div>
+    {{conteudo}}
     
 </body>
 </html>
