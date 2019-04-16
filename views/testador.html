@@ -7,20 +7,23 @@
     <title>testador</title>
     <link href="http://allfont.net/allfont.css?fonts=lucida-console" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="despositivos.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/despositivos.css">
+    <script src="js/script.js"></script>
+    <script src="js/w3.js"></script>
+   
 </head>
 <body >
    
     <div id="nav-ico" class="icon-bar">
             <a id="home" href="/"><i class="fas fa-home"></i></a> 
             <a  href="/projetos"><i class="fas fa-backspace"></i></a> 
-            <a id="smartphone" class="icone" href="javascript:device('smartphone')"><i class="fas fa-mobile-alt"></i></a>
-            <a id="tablet" href="javascript:device('tablet')"><i class="fas fa-tablet-alt"></i></a>  
-            <a id="laptop" href="javascript:device('laptop')"><i class="fas fa-laptop"></i></a>
-            <a id="expand" href="javascript:device('expand')"><i class="fas fa-expand"></i></a> 
+            <a id="smartphone" class="icone" onclick="device('smartphone')"><i class="fas fa-mobile-alt"></i></a>
+            <a id="tablet" onclick="device('tablet')"><i class="fas fa-tablet-alt"></i></a>  
+            <a id="laptop" onclick="device('laptop')"><i class="fas fa-laptop"></i></a>
+            <a id="expand" onclick="device('expand')"><i class="fas fa-expand"></i></a> 
           </div>
 
 
@@ -31,7 +34,6 @@
             </div>
         </div>
     </div>
-    {{conteudo}}
     
 </body>
 </html>

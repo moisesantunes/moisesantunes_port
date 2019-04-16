@@ -1,34 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>inicio</title>
+    <title>Projetos</title>
     <link href="http://allfont.net/allfont.css?fonts=lucida-console" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
+    <script src="js/w3.js"></script>
+   
 
-    <link rel="stylesheet" href="estilos.css">
-    <script src="script.js"></script>
 </head>
+
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="/" id="home" >home</a>
-        <a href="/inicio" >Inicio</a>
+    <div class="topnav" id="barra-nav">
+        <a href="/" id="home" >Início</a>
         <a href="/projetos" class="active">Projetos</a>
-        <a href="#about">Contatos</a>
+        <a href="/contatos" >Contatos</a>
         <a href="javascript:void(0);" class="icon" onclick="fnav()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
 
+      <div class="proj-header">
+        <h1>Meus projetos</h1>
+        <p>Pagina para mostar meus projetos</p>
+        <hr class="divisor">
+      </div>
+      <section class="proj-section ">
+          <div class="proj-card card     parent w3-padding">
+          <h3>Modelo basico</h3>
+          <p>Esse é um modelo mais simples para mostrar um padrão comum de site adaptavel a qualquer tamanho de tela</p>
+          <div class="absolute">
+            <a class="w3-button" href="/testador?conteudo=exemplo" ><i class='far fa-eye'></i> uma olhadinha</a>
+          </div>
+          
+        </div>
+        <div class="proj-card card  parent  w3-padding">
+            <h3>Foode</h3>
+            <p>Modelo para restaurantes, bares e estabelecimento similares</p>
+            <div class="absolute"> 
+              <a class="w3-button" href="/testador?conteudo=foodee" ><i class='far fa-eye'></i> uma olhadinha</a>
+            </div>
+          </div>
+          
+      </section>
+      
 
+  
 
-pagina de projetos
-<br>
-<a href="/testador?conteudo=exemplo" >primeira</a><br><br>
-	<a href="/testador?conteudo=foodee" >segunda</a>
 
      
+  
+      <footer>
+          <div class="f-sup">
+            <p>mapa do site</p>
+            <a class="link-footer" href="/">inicio</a>
+            <a class="link-footer" href="/projetos">projetos</a>
+            <a class="link-footer" href="/contatos">contatos</a>
+            <a class="link-footer" href="/creditos">créditos</a>
+          </div>
+          <div class="f-inf">
+            <p>Moisés Antunes</p>
+            <p>Ultima atualização: 16/04/2019 </p>
+            <p>Ultima versão do site: 1.0.0 </p>
+        </div>
+    </footer>
 </body>
 </html>
