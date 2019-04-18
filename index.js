@@ -35,16 +35,10 @@ app.get('/testador' , (req, res) =>{
     console.log(req.query.conteudo)
     let lista = fs.readdirSync('templates')
     if(lista.includes(req.query.conteudo)){
-        console.log('tem')
         res.render('testador.html',{conteudo: req.query.conteudo})
     }else{
-        console.log('nao tem')
         res.render('projetos.html')
-
-    }
-    // console.log(lista)
-
-    
+    }    
 })
 app.get('*' , (req, res) =>{
    

@@ -1,0 +1,194 @@
+
+/*teste da tab vertical w3schools*/
+
+.skill-tab{
+    color: #363f3f;
+    display:flex;
+      justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto 3vh ;
+    height: 95vh;
+    box-shadow: 0px 3px 6px silver;
+  }
+  
+  .menu-skill {
+    width: 25%;
+    height: 100%; 
+     
+  }
+  #defaultOpen{
+    display: none;
+  }
+  .link-skill {
+    width: 100%;
+    height: calc(100% / 7);
+    display:flex;
+      justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+  
+  #html-m, #html{background-color: rgba(227, 79, 38, .08) }
+  #css-m, #css{background-color: rgba(82, 153, 224, .08) }
+  #js-m, #js{background-color: rgba(247, 223, 30, .08) }
+  #node-m, #node{background-color: rgba(108, 194, 74, .08) }
+  #php-m, #mongo{background-color: rgba(136, 146, 190, .08) }
+  #mongo-m, #php{background-color: rgba(150, 78, 54, .08) }
+  #mysql-m, #mysql{background-color: rgba(242, 145, 17, .08) }
+  
+  .ativo-html {
+    
+    border-bottom: #e34f26 2px solid;
+  }
+  .ativo-css{
+    
+    border-bottom: #5299e0 2px solid;
+  }
+  .ativo-js{ 
+    
+    border-bottom: #f7df1e 2px solid;
+  }
+  .ativo-node{
+    
+    border-bottom: #4CAF50 2px solid;
+  }
+  .ativo-mongo{
+    border-bottom: #86888a 2px solid;
+  }
+  
+  .ativo-php{
+    
+    border-bottom: #6e5494 2px solid;
+  }
+  .ativo-mysql{
+    border-bottom: rgba(242, 145, 17, 1) 2px solid;
+  }
+  .link-skill:first-child{
+    border-top-left-radius: 0px;
+  }
+  .link-skill:last-child{
+    border-bottom-left-radius: 0px;
+  }
+  .icone{
+    font-size: 3vw;
+  }
+  .link-skill span{
+    width: 60%;
+    padding: 15px;
+    font-size: 1.6vw;
+  }
+  
+  
+  .conteudo-skill{/*parte do conteudo*/
+    width: 75%;
+    height: 100%;
+  }
+  
+  
+  /* Style the tab content */
+  .inf-skill {
+   width: 100%;
+   height: 100%; 
+   padding: .8vw;
+   overflow: auto;
+   text-align: center;
+  }
+  .tab-img-skill{
+    width: 100%;
+    display:flex;
+      justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+  }
+  .tab-in-img-skill{
+    width: 200px;
+    height: 200px;
+    margin: 4px;
+  }
+  
+  .inf-skill .ferramenta{
+    color: #363f3f;
+    font-size: 10vw;
+    padding: 2vw;
+    border: 2px  #363f3f;
+    border-style: dashed;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  #um{
+    background-color: rgba(54, 63, 63, 0.08);
+    color: #363f3f;
+  }
+  .inf-skill h2{
+    font-size: 3vw;
+    color: #363f3f;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+  }
+  .inf-skill p{
+    font-size: 1.2vw;
+    color: #363f3f;
+    padding-left: .6vw;
+    padding-right: .6vw;
+    line-height: 1.5;
+  }
+  
+
+  @media screen and (max-width: 640px) {/* ajuste da tabe de skill */
+    .skill-tab{
+      width: 90vw;
+      margin: 0 auto 3vh ;
+      height: 95vh;
+      flex-flow: row wrap;
+    }
+    .menu-skill {
+      width: 100%;
+      height: 18%; 
+      overflow-x: auto;
+      display: flex;
+      flex-flow: row;
+    }
+    .conteudo-skill{
+      width: 100%;
+      height: 82%;
+    }
+    .link-skill {
+      width: 200px;
+      height: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3%;
+    }
+  
+    .tab-in-img-skill{
+      width: 110px;
+      height: 110px;
+      margin: 10px;
+    }
+    .link-skill:first-child{border-top-left-radius: 0px;}
+    .link-skill:last-child{border-bottom-left-radius: 0px;}
+    .link-skill:last-child{border-top-right-radius: 8px;}
+    .inf-skill{
+      padding-top: 6px;
+      overflow: auto;
+    }
+    .inf-skill h2{
+      font-size: 7vh;
+    }
+    .inf-skill p{
+      font-size: 3vh;
+          
+  }
+  .icone{
+    font-size: 6.4vw;
+  }
+  .link-skill span{
+    width: 60%;
+    padding: 15px;
+    font-size: 3.2vw;
+  }
+  }
+  

@@ -1,0 +1,78 @@
+
+.container-contatos{
+    width: 80vw;
+    margin: 2vh auto 1vh;
+    color: #363f3f;
+  
+  }
+  .header-contatos{
+    padding: 10px;
+  }
+  .header-contatos h1{
+    font-size: 4.5vw;
+    color: #363f3f;
+    font-weight: lighter;
+  }
+  .header-contatos p{
+    font-size: 1.4em;
+    color: #363f3f;
+    font-weight: lighter;
+  
+  }
+  
+  .contatos-links-container{
+    padding: 10px 30px;
+  }
+  .contatos-links-container a{
+    text-decoration: none;
+    font-size: 2.2em;
+    font-weight: lighter;
+  }
+  .linkedin, .facebook, .twitter, .git, .fcc{
+    width :3vw;
+    transition: all 0.3s ease;  
+  }
+  
+  .linkedin:hover{
+    color: #86888a;
+    margin-left: 10px;
+  }
+  
+  
+  .facebook:hover{
+    color: #3b5998;
+    margin-left: 10px;
+  }
+  .twitter:hover{
+    color: #1da1f2;
+    margin-left: 10px;
+  }
+  .git:hover{
+    color: #6e5494;
+    margin-left: 10px;
+  }
+  .fcc:hover{
+    color: #006400;
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 640px) {
+    
+  .container-contatos{
+    width: 90vw;
+   }
+  
+  .header-contatos h1{
+    font-size: 8vw;
+  }
+  .header-contatos p{
+    font-size: 4vw;
+  }
+  
+  .contatos-links-container a{
+    font-size: 5.4vw;
+    font-weight: lighter;
+  }
+     
+  }
+  
+  
