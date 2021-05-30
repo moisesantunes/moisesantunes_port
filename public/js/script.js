@@ -3,7 +3,7 @@ function p_click() {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
  // carousel();
- w3.slideshow(".slides", 10000);
+ //w3.slideshow(".slides", 10000);
 }
 
 
@@ -71,5 +71,17 @@ function mudaSkill(evt, skill) {
 
 
 
+$('.slides-info').slick({
+    
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed:4000,
+  arrows: false,
+  dots: true
+  
+});
 
 

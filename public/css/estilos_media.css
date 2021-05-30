@@ -1,0 +1,453 @@
+/* Extra small devices (phones, 600px and down),
+medida referente ao tamanho maximo 
+
+*/
+
+@media only screen and (max-width: 600px) {
+  .banner{
+    margin: 1.5vh auto;
+    width: 95vw;
+  }
+    /* /////////////////  nav  /////////// */
+    .topnav a:not(:first-child) {display: none;}
+    
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 2.5vw;
+      top: 1vh;
+      background-color: transparent;
+      color: whitesmoke;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav{
+      width: 95vw;
+    }
+
+   
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+
+
+    /* ///////////////// fim nav nav  /////////// */
+
+    /* ////////////   nav do testador   ///////////////// */
+
+
+    .icon-bar {
+        width:95vw;
+      }
+      .icon-bar a {
+        width: calc(95vw / 6);
+        font-size: 1.25em;
+      }
+
+    /* ////////// fim nav do testador   //////////////// */
+
+    /* ////////// apresentação inicial   //////////////// */
+
+    .container-inicio{
+      width: 95vw;
+      min-height: 87.5vh;
+      margin: 1.5vh auto;
+    }
+    .container-img{
+      width: 80%;
+      padding: 1vw;
+    }
+    .imagem1{
+      padding: 10px;
+      width: 100%;  
+    }
+    .container-info{
+      width: 100%;
+      padding: 1.5vw;
+      
+    }
+    .container-info h1{
+      font-size: 7vw;
+      font-weight: lighter; 
+    }
+    .container-info p{
+      font-size: 4vw;
+      font-weight: lighter;
+      
+    }
+    .container-link-inicio{
+    
+    }
+    .container-info a{
+      font-size: 4vw;
+      padding: 6px;
+      margin: 6px;
+      
+    }
+    
+    
+
+    /* ////////// fim apresentação inicial   //////////////// */
+
+    /* parte dos slides */
+    .slides-info{
+      width: 95vw;
+    }
+    
+    .slides{
+      width: 80%;
+      text-align: center;
+      padding: 10px;
+      margin-top: 2vh;
+      margin-bottom: 2vh;      
+    }
+    .slides h2{
+      font-size: 8vw;
+    } 
+    .slides p{
+      font-size: 4vw;
+      line-height: 2;
+    }
+    /* fim dos slides */
+/* parte dos cards */
+    .cards-container, .cards-container-ext{
+      margin: 1.5vh auto;
+      width: 95vw;
+     
+  }
+  .cards-container-ext h2{
+    text-align: center;
+    font-size: 5.4vmax
+  }
+  
+  .cards-container .cards-serv{
+      margin: 3vw;
+      min-height: 50vmax;
+  }
+  .cards-serv .card-img img{
+      width: 55%;
+  }
+  .cards-serv h3{
+      font-size: 4.5vmax;
+  }
+  .cards-serv p{
+      font-size: 2.8vmax;
+  }
+
+  /* footer */
+footer{
+  width: 95vw;
+}
+.f-sup, .f-inf{
+  width: 100%;
+  min-height: 5vmax;
+  padding: .5vw;
+  border-bottom: 1px solid whitesmoke;
+
+
+}
+footer a ,footer p{
+  margin: 4px;
+}
+/* fim footer */
+
+} 
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+
+a partir daqui é referente ao minimo que for encontrado
+
+
+*/
+@media only screen and (min-width: 600px) {
+  .banner{
+    margin: 1.5vh auto;
+    width: 90vw;
+  }
+    /*/////////////////// nav//////////////// */
+    .topnav{
+        width: 90vw;
+      }
+    /* ////////////fim da nav ////////////// */
+
+    /* ////////////   nav do testador   ///////////////// */
+
+
+    .icon-bar {
+    width:90vw;
+  }
+  .icon-bar a {
+    width: calc(90vw / 6);
+    font-size: 1.4em;
+  }
+
+    /* ////////// fim nav do testador   //////////////// */
+
+    /* ////////// apresentação inicial   //////////////// */
+
+    .container-inicio{
+      width: 90vw;
+      min-height: 80vh;
+      margin: 1.5vh auto;
+    }
+    .container-img{
+      width: 35%;
+      padding: 2vw;
+    }
+    .imagem1{
+      width: 100%;  
+    }
+    .container-info{
+      width: 65%;
+      padding: 2.5vw;
+    }
+    .container-info h1{
+      font-size: 4vw;
+      font-weight: lighter;
+      
+    }
+    .container-info p{
+      font-size: 2vw;
+      font-weight: lighter;
+      
+    }
+    .container-link-inicio{
+    
+    }
+    .container-info a{
+      font-size: 2vw;
+      padding: 6px;
+      margin: 6px;
+      
+    }
+    
+    
+
+    /* ////////// fim apresentação inicial   //////////////// */
+
+    /* parte dos slides */
+    .slides-info{
+      width: 90vw;
+    }
+    
+    .slides{
+      text-align: center;
+      padding: 3vw;
+      margin-top: 2vh;
+      margin-bottom: 2vh;      
+    }
+    .slides h2{
+      font-size: 6vw;
+    } 
+    .slides p{
+      font-size: 2.5vw;
+      line-height: 2;
+    }
+    /* fim dos slides */
+    /* parte dos cards */
+    .cards-container, .cards-container-ext{
+      margin: 2vh auto;
+      width: 90vw;
+      
+  }
+  .cards-container-ext h2{
+    text-align: center;
+    font-size: 6vmax
+  }
+  .cards-container .cards-serv{
+      margin: 3vw;
+      min-height: 50vmax; 
+      
+  }
+  .cards-serv:not(.card-img){
+      padding: 10px;
+  }
+  .cards-serv .card-img img{
+      width: 45%;
+  }
+  .cards-serv h3{
+      font-size: 3.6vmax;
+  }
+  .cards-serv p{
+      font-size: 2.6vmax;
+  }
+
+  /* footer */
+  footer{
+    width: 100%;
+  }
+  .f-sup, .f-inf{
+    width: 50%;
+    min-height: 5vmax;
+    padding: .5vw;
+    
+  
+  
+  }
+  footer a ,footer p{
+    margin: 4px;
+  }
+  /* fim footer */
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* parte dos cards */
+
+  .cards-container{
+    margin: 2vh auto;
+    
+    
+}
+.cards-container .cards-serv{
+    margin: 2vw;
+    min-height: 40vmax; 
+}
+.cards-serv:not(.card-img){
+    padding: 10px;
+}
+.cards-serv .card-img img{
+    width: 55%;
+}
+.cards-serv h3{
+    font-size: 3.4vmax;
+}
+.cards-serv p{
+    font-size: 2vmax;
+}
+
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 902px) {
+  .banner{
+    margin: 2vh auto;
+    width: 80vw;
+  }
+     /*/////////////////// nav//////////////// */
+     .topnav{
+        width: 80vw;
+      }
+
+    /* ////////////fim da nav ////////////// */
+
+     /* ////////////   nav do testador   ///////////////// */
+
+
+     .icon-bar {
+        width:80vw;
+      }
+      .icon-bar a {
+        width: calc(80vw / 6);
+        font-size: 1.6em;
+        padding: .6vw;
+      }
+
+    /* ////////// fim nav do testador   //////////////// */
+    /* apresentação inicial */
+    .container-inicio{
+      width: 80vw;
+      min-height: 87vh;
+      margin: 1.5vh auto;
+    }
+    .container-info h1{
+      font-size: 4vw;
+      font-weight: lighter;
+      
+    }
+    .container-info p{
+      font-size: 1.6vw;
+      font-weight: lighter;
+      
+    }
+    .container-link-inicio{
+    
+    }
+    .container-info a{
+      font-size: 1.6vw;
+      padding: 6px;
+      margin: 6px;
+      
+    }
+ /* parte dos slides */
+ .slides-info{
+  width: 80vw;
+}
+
+.slides{
+  text-align: center;
+  padding: 3vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;      
+}
+.slides h2{
+  font-size: 4.5vw;
+} 
+.slides p{
+  font-size: 2vw;
+  line-height: 2;
+}
+/* fim dos slides */
+
+/* parte dos cards */
+
+.cards-container, .cards-container-ext{
+  margin: 2vh auto;
+  width: 80vw;
+}
+.cards-container-ext h2{
+  text-align: center;
+  font-size: 5.2vmax
+}
+.cards-container .cards-serv{
+  margin: 3vw;
+  width: 18vmax;
+  min-height: 27vmax; 
+}
+.cards-serv:not(.card-img){
+  padding: 10px;
+}
+.cards-serv .card-img img{
+  width: 45%;
+}
+.cards-serv h3{
+  font-size: 2.5vmax;
+}
+.cards-serv p{
+  font-size: 1.4vmax;
+}
+
+/* fim cards */
+/* footer */
+footer{
+  width: 100%;
+}
+.f-sup, .f-inf{
+  width: 50%;
+  min-height: 4vmax;
+  padding: .5vw;
+
+
+}
+footer a ,footer p{
+  margin: 4px;
+}
+/* fim footer */
+
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    
+} 

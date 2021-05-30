@@ -1,8 +1,15 @@
 *{ box-sizing: border-box;}
 body{margin: 0;}
+
+.banner{
+  margin: 1vh auto;
+  box-shadow: 0px 3px 6px silver;
+  padding: 0px;
+}
 /*barra de navegação comum a quase todas as paginas*/
+
 .topnav {
-  width: 90vw;
+ 
   margin: 1vh auto;
   background-color: #363f3f;
   overflow: hidden;
@@ -16,11 +23,11 @@ body{margin: 0;}
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   transition: all 0.3s ease;
 }
   /* muda a cor dos links no hover */
-.topnav a:hover {
+.topnav a:not(.icon):hover {
   background-color: #f7df1e;
   color: #363f3f;
 } 
@@ -43,29 +50,7 @@ body{margin: 0;}
   display: none;
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 640px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 2.5vw;
-    top: 1vh;
-    background-color: #e34f26;
-    color: whitesmoke;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav{
-    width: 95vw;
-  }
- 
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+
 
   /*****************nav bar do testador******************/ 
 .icon-bar {
@@ -81,7 +66,7 @@ body{margin: 0;}
   padding: 1vw;
   transition: all 0.3s ease;
   color: whitesmoke;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 .icon-bar a:hover {
   background-color: #f7df1e;
@@ -89,20 +74,320 @@ body{margin: 0;}
 a.icone{
   color: #5299e0;
 }
+
+
+/*pagina inicio ************************************/
+
+.container-inicio{
+  padding: 1vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: #363f3f;
+  
+}
+.container-img{
+  
+}
+.imagem1{
+  width: 100%;  
+}
+.container-info{
+  text-align: center;
+  color: #363f3f;
+}
+.container-info h1{
+  margin: 0;
+  padding: 0; 
+}
+.container-info p{
+  font-size: 3vw;
+  margin: 4px;
+  
+}
+.container-link-inicio{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.container-info a{
+  border:2px solid #5299e0;
+  transition: all 0.3s ease;  
+  color: #5299e0;
+  text-decoration: none;
+  
+}
+.container-info a:hover{
+  background-color: #5299e0;
+  color: whitesmoke;
+}
+
+/*parte dos slides        */
+
+.slides-info{
+  margin: 2vh auto;
+  color: #363f3f;
+  
+  
+  
+}
+
+.slides{
+  text-align: center;
+  
+}
+
+.slides h2{
+  font-weight: lighter;
+}
+
+.slides p{
+  font-weight: lighter;
+}
+.slides .chave{
+  color: #e34f26;
+  
+}
+.slides .atento{
+  color: #5299e0 ;
+}
+.slides .legal{
+  color: #4CAF50 ;
+}
+/* parte dos cards */
+.cards-container-ext{
+  color: #363f3f;
+
+}
+.cards-container-ext h2{
+  font-weight: lighter;
+}
+.cards-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cards-container .cards-serv{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: .5px #363f3f solid;
+  border-radius: 2px;
+  width: 200px;
+  min-height: 30vh;
+}
+.cards-serv .card-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+  .cards-serv .card-img img{
+  
+  }
+.cards-serv h3{
+  margin: 5px;
+  text-align: center; 
+  font-weight: lighter;
+}
+.cards-serv p{
+  margin: 5px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/*pagina inicio daqui pra cima ************************************/
+
+
+
+/*pagina de projetos*/
+.proj-header{
+  width: 80vw;
+  margin:  2vh auto;
+  padding: 1vw;
+}
+.proj-header h1{
+  font-size: 3.4em;
+  color: #363f3f;
+  font-weight: lighter;
+}
+.proj-header p{
+  font-size: 1.2em;
+  color: #363f3f;
+  font-weight: lighter;
+
+}
+.divisor{
+  border: 4px solid #4CAF50;
+}
+  
+.proj-section{
+  width: 80vw;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+    
+
+}
+.proj-card{
+  width: 48%;
+  margin: 1%;
+  min-height: vh;
+  position: relative;
+  box-shadow: 0px 3px 6px silver;
+}
+ 
+.proj-card h3{
+  margin: 8px;
+  border-bottom: #e34f26 2px solid
+ 
+}
+.proj-card p{
+  margin: 6px;
+  padding-bottom: 40px;
+ 
+}
+
+.proj-card .absolute{
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.2em;
+}
+
+.proj-card .absolute i{
+ margin-left: 5px;
+}
 @media screen and (max-width: 640px) {
-  .icon-bar {
-    width:90vw;
+
+  .proj-header h1{
+    font-size: 2.8em;
   }
-  .icon-bar a {
-    width: calc(90vw / 6);
+  .proj-header p{
+    font-size: 1.1em;
   }
+  
+.proj-section{
+  width: 90vw;
+}
+.proj-card{
+  width: 100%; 
+}
+}
+
+/*pagina de contatos*/
+
+
+.container-contatos{
+  width: 80vw;
+  margin: 2vh auto 1vh;
+  color: #363f3f;
+
+}
+.header-contatos{
+  padding: 10px;
+}
+.header-contatos h1{
+  font-size: 4.5vw;
+  color: #363f3f;
+  font-weight: lighter;
+}
+.header-contatos p{
+  font-size: 1.4em;
+  color: #363f3f;
+  font-weight: lighter;
 
 }
 
+.contatos-links-container{
+  padding: 10px 30px;
+}
+.contatos-links-container a{
+  text-decoration: none;
+  font-size: 2.2em;
+  font-weight: lighter;
+}
+.linkedin, .facebook, .twitter, .git, .fcc{
+  width :3vw;
+  transition: all 0.3s ease;  
+}
+
+.linkedin:hover{
+  color: #86888a;
+  margin-left: 10px;
+}
+
+
+.facebook:hover{
+  color: #3b5998;
+  margin-left: 10px;
+}
+.twitter:hover{
+  color: #1da1f2;
+  margin-left: 10px;
+}
+.git:hover{
+  color: #6e5494;
+  margin-left: 10px;
+}
+.fcc:hover{
+  color: #006400;
+  margin-left: 10px;
+}
+@media screen and (max-width: 640px) {
+  
+.container-contatos{
+  width: 90vw;
+ }
+
+.header-contatos h1{
+  font-size: 8vw;
+}
+.header-contatos p{
+  font-size: 4vw;
+}
+
+.contatos-links-container a{
+  font-size: 5.4vw;
+  font-weight: lighter;
+}
+   
+}
+
+.anuncio{
+  padding: 3.5vmax;
+  background-color: #e34f26;
+  text-align: center;
+  width: 70vw;
+  margin: 3vmax auto;
+  border: 1px solid #e34f26;
+  
+  outline-offset: 1vmax;
+  outline: silver 3px solid;
+}
+.anuncio h2{
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 5vmax;
+}
+.anuncio a{
+  text-decoration: none;
+}
+.anuncio a i{
+  color: whitesmoke;
+  font-size: 5vmax;
+}
   /*footer  */
-  @media screen and (min-width: 360px) {
-   footer{
-    width: 95vw;
+  footer{
+    
     background-color: #363f3f;
     color: whitesmoke;
     margin: 2vh auto;
@@ -111,11 +396,9 @@ a.icone{
     justify-content: center;
     align-items: center;
     padding: 10px;
-  
   }
   .f-sup, .f-inf{
-    width: 100%;
-    min-height: 25vh;
+    
     padding: 1vw;
 
   }
@@ -124,39 +407,7 @@ a.icone{
     display: block;
     padding-left: 10px;
   }
-
-  }
-
-  @media screen and (min-width: 640px) {
-    footer{
-      width: 90vw;
-      background-color: #363f3f;
-      color: whitesmoke;
-      margin: 2vh auto;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
-    .f-sup, .f-inf{
-      width: 50%;
-      min-height: 25vh;
-      padding: 1vw;
-  
-    }
-    footer a{
-      text-decoration: none;
-      display: block;
-      padding-left: 10px;
-    }
-    
-    
-
-  }
-
-  
-
+ 
 
   @media screen and (max-width: 500px) {
    

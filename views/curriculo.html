@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculo Interativo</title>
+    <link href="http://allfont.net/allfont.css?fonts=lucida-console" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_media.css">
+    <link rel="stylesheet" href="css/estilos_curriculo.css">
+</head>
+<body onload="p_click()">
+    <section class="skill-tab">
+
+        <div class="menu-skill">
+          <div  id="defaultOpen" onclick="mudaSkill(event, 'um')">oi</div>
+  
+          <div id="html-m" class="link-skill  " onclick="mudaSkill(event, 'html')" >
+            <i class="icon-html5 icone"></i>
+            <span>HTML5</span>
+          </div>
+          <div id="css-m"class="link-skill" onclick="mudaSkill(event, 'css')">
+            <i class="icon-css3 icone"></i> 
+            <span>CSS3</span>
+          </div>
+  
+          <div id="js-m" class="link-skill" onclick="mudaSkill(event, 'js')">
+            <i class="icon-javascript-alt icone"></i> 
+            <span>JavaScript</span>
+          </div>
+          <div id="node-m" class="link-skill" onclick="mudaSkill(event, 'node')">
+            <i class="icon-nodejs icone"></i>
+            <span>Node.js</span>
+          </div>
+          <div id="mongo-m" class="link-skill" onclick="mudaSkill(event, 'mongo')">
+              <i class="icon-mongodb icone"></i>
+                <span>MondoDb</span>
+          </div>
+          <div id="php-m" class="link-skill" onclick="mudaSkill(event, 'php')">
+              <i class="icon-php icone"></i>
+                <span>PHP</span>
+          </div>
+          <div id="mysql-m" class="link-skill" onclick="mudaSkill(event, 'mysql')">
+            <i class="icon-mysql-alt icone"></i> 
+            <span>MySql</span>
+          </div>
+        </div> 
+  
+  
+  
+        <div class="conteudo-skill">
+          <div id="um" class="inf-skill">
+            <div class="tab-img-skill">
+                <i class='fas fa-toolbox ferramenta'></i>
+            </div>
+            <h2>Minhas "caixa de ferramentas"</h2>
+            <p>
+              Essa é a parte onde eu apresento minhas principais ferramentas de trabalho e como eu as uso para entregar aos clientes ótimos trabalhos.
+              Fique à vontade para dar uma olhada, prometo que não vai ser chato.
+            </p>
+          </div>
+  
+          <div id="html" class="inf-skill">
+            <div class="tab-img-skill">
+              <img class="tab-in-img-skill" class="" src="imagens/html-5.svg" >
+            </div>
+            <h2>HTML5</h2>
+            <p>
+              É a base de todo site que existe, todas as informações são exibidas através desta importante ferramenta. <br>
+              Usando rotineiramente o HTML juntos com outras ferramentas eu faço excelentes conteúdos, tanto bonitos quanto funcionais. 
+            </p>
+          </div>
+          
+          <div id="css" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/css3.svg" >
+            </div>
+            <h2>CSS3</h2>
+            <p> 
+              Estilo e beleza. É para isso que serve essa ferramenta. <br> 
+              Tudo que é bonito (ou nem tanto) que está nos sites é feito com CSS: cores, letras, imagens, enfim, tudo o que podemos ver nos sites é ajustado com CSS.
+              Por isso sempre busco alcançar a maestria no uso dessa ferramenta para entregar ao cliente trabalhos bonitos e estilosos.
+            </p> 
+          </div>
+          
+          <div id="js" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/javascript.svg" >
+            </div>
+            <h2>JavaScript</h2>
+            <p>
+              É a famosa linguagem da web, serve para dinamizar e automatizar praticamente qualquer coisa em um site. <br>
+              Eu busco sempre novas tendências de uso dessa linguagem, inclusive por combinar com outras ferramentas
+            </p>
+          </div>
+  
+          <div id="node" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/nodejs_svg.svg" >
+            </div>
+            <h2>Node.js</h2>
+            <p>
+              É uma tecnologia em ascensão e serve para programar o que não vemos diretamente em um site. <br>
+              Por exemplo: quando você aperta um botão com “todas as postagens” ou “salvar”, é ele que faz o trabalho duro que não é visto. <br>
+              Sempre busco meios de melhorar o manuseio dessa ferramenta visto que ela é responsável por várias coisas em uma aplicação feita para a web, 
+              inclusive a segurança.
+            </p>
+          </div>
+          <div id="mongo" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/mongodb.svg" >
+            </div>
+            <h2>MongoDb</h2>
+            <p>
+              Pode se dizer que é um recipiente para que possamos guardar e recuperar dados, 
+              então se o cliente me pedir para criar um campo em que guarda registros, por exemplo,
+              o nome e telefone de clientes ou os serviços agendados, é aqui que vou guardar essas informações.
+            </p>
+          </div>
+  
+          <div id="php" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/new-php-logo.svg" >
+            </div>
+            <h2>PHP</h2>
+            <p>
+              É uma outra ferramenta que busco usar para interagir com as partes não vistas de um site, 
+              é mais antiga que o Node.js mas é muito eficaz . <br>
+              Por já estar no mercado a algum tempo, existem muitos sites que usam esta tecnologia, 
+              então tenho como rotina utilizar essa tradicional linguagem dos modos mais inovadores possível.
+            </p>
+          </div>
+  
+          <div id="mysql" class="inf-skill">
+            <div class="tab-img-skill" >
+              <img class="tab-in-img-skill" src="imagens/mysql.svg" >
+            </div>
+            <h2>MySql</h2>
+            <p>
+              É outro recipiente digital de dados que os sites usam,  
+              é um pouco mais tradicional e formal que o Mongodb e seu uso é um pouco diferente, mas é igualmente poderoso. <br>
+              Por isso que sempre atualizo minha experiência no seu uso.
+            </p>
+          </div>
+  
+        </div>
+      </section>
+      
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+  
+  
+      <script src="js/script.js"></script>  
+</body>
+</html>

@@ -22,15 +22,15 @@ app.get('/' , (req, res) =>{
 app.get('/contatos' , (req, res) =>{
     res.render('contatos.html')
 })
-app.get('/projetos' , (req, res) =>{
-   
+app.get('/projetos' , (req, res) =>{  
     res.render('projetos.html')
 });
 app.get('/contatos' , (req, res) =>{
-   
     res.render('contatos.html')
 })
-
+app.get('/curriculo' , (req, res) =>{
+    res.render('curriculo.html')
+})
 app.get('/testador' , (req, res) =>{
     console.log(req.query.conteudo)
     let lista = fs.readdirSync('templates')
@@ -45,6 +45,6 @@ app.get('*' , (req, res) =>{
     res.render('pag_404.html')
 })
 
-app.listen(80,() =>{
+app.listen(3000,() =>{
     console.log('ok')
 } )
